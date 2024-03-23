@@ -5,6 +5,10 @@ const config = {
   isProd: process.env.NODE_ENV === 'production',
   port: process.env.PORT || 3000,
   dbUrl: process.env.DATABASE_URL,
+  apikey: process.env.API_KEY,
+  jwtSecret:process.env.JWT_SECRET,
+  emailSender: process.env.EMAIL_SENDER,
+  emailPassword: process.env.EMAIL_PASSWORD,
 }
 
 module.exports = { config };
